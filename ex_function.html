@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Introducao jscript</title>
+        <meta charset="utf-8">
+    </head>
+    <body id=>
+        <h1>Lógica de Progrmação JavaScript</h1>
+
+        
+        <button onclick="criarTabuada()">Tabuada</button>
+        <button onclick="limparTabuada()">Limpar</button>
+        
+        <div id="output"></div>
+            <script>
+                function criarTabuada() {
+                    var n = prompt('digite o numero:');
+                    limparTabuada();
+                    var number = parseFloat(n);
+                    var i = 0;
+                while (i < 10) {
+                    i++;
+                    msg += n + 'x' + i + '=' + (n*i) + '</br>';
+                }    
+                output.innerHTML = msg;
+                }
+                function limparTabuada() {
+                    msg = '';
+                    output.innerHTML = msg;
+                }
+
+                var output = document.querySelector('#output');
+                var msg = '';
+
+            </script>
+
+    </body>
+</html>

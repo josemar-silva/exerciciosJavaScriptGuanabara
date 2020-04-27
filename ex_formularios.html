@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html lang="pt-br">
+    <head>
+        <title> Formularios html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <style>
+            
+            fieldset{
+                padding: 20px;
+                background-color: rgb(179, 183, 184);
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50%;
+                margin-bottom: 50%;
+            }
+
+            legend{
+                font-weight: 700;
+                display: block;
+            }
+
+            #user, #pass {
+                display: block;
+                margin: 5px;
+                width: 100%; 
+            }
+
+            #user, #pass:focus {
+                background-color: #cecece;            }
+
+            label{
+                color: blue;
+            }
+
+            #btn{
+                border:1px solid darkred;
+                margin: 10px;
+                box-sizing: border-box;
+                width: 30%;   
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+                <legend>Login</legend>
+            <form action="" method="POST">
+                <label for="">Usuario:</label>
+                <input type="text" name="user" id="user" autofocus>
+                <label for="pass">Senha:</label>
+                <input type="password" name="pass" id="pass">
+                <input type="submit" value="Entrar" id="btn">
+
+                <label>Masculino</label>
+                <input type="radio" name="Sexo" value="M">
+                <label>Feminino</label>
+                <input type="radio" name="Sexo" value="F">
+            </form>
+        </fieldset>
+    </body>
+</html>

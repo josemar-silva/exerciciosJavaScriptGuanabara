@@ -1,0 +1,33 @@
+<!doctype>
+<html>
+    <head>
+        <title>Introducao jscript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Progrmação JavaScript</h1>
+        
+        <script>
+
+            var n1 = prompt("Digite um numero:")
+            n1 = parseInt(n1);
+            
+            var n2 = 0;
+            
+            document.write("Tabuada de " + n1 + ":<br>")
+            
+            do{                
+                n2++;
+                document.write(n1 + "*" + n2 + " = " + (n1*n2) +"<br>");
+                if (n2 % 10 == 0){
+                document.write("<hr/><br/>");
+                }
+
+            } while(n2 <100 ){
+            }
+            
+            document.write("Fim da Tabuada!!!");
+            
+        </script>
+    </body>
+</html>

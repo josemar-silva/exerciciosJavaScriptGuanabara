@@ -1,0 +1,49 @@
+<!doctype>
+<html>
+    <head>
+        <title>Introducao jscript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Progrmação JavaScript</h1>
+        
+            <script>
+
+               var ano = 1004;
+                
+                document.write("O ano é: " + ano + '</br>');
+
+                 /* var ano = 1004;
+                
+                document.write("O ano é: " + ano + '</br>');
+
+               
+                 while (ano < 2020) {
+                    ano+=4;
+                    document.write("O ano é: " + ano + '</br>');
+                }
+
+                document.write("Já estamos em 2020")
+*/
+
+                do {
+                    ano+=1;
+                    if (ano % 4 == 0 & ano % 100 != 0 || ano % 400 == 0){
+                        
+                        document.write("O ano é: " + ano + ', é bissexto' + '</br>');
+                    } else {
+                        
+                        document.write("O ano é: " + ano + '</br>');
+                    }
+
+                } while (ano < 2020) {
+                    
+                }
+
+                document.write("Já estamos em 2020");
+
+
+            </script>
+
+    </body>
+</html>
