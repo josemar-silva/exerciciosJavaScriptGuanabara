@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: orange;
+            color: purple;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        strong{
+            color:red
+        }
+
+        div{
+            background: green;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 300px;
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+
+        p#res{
+            background: white;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando Estudos DOM</h1>
+
+    <p> Aqui vai o resultado</p>
+
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript!</p>
+
+    <div id="area">clique em mim</div>
+    
+        <script>
+            var a = document.getElementById('area')
+           
+            a.addEventListener('mouseenter', entrar) // evento 1
+            a.addEventListener('click', clicar) // evento 2
+            a.addEventListener('mouseout', sair) // evento 3
+            a.addEventListener('auxclick', reset) // evento 3
+
+           
+            
+        function entrar() {
+            document.querySelector('div#area')
+            area.innerText = 'ENTROU...!'
+            area.style.background = 'white'
+            area.style.color = 'red'  
+        }
+
+        function reset(){
+            document.querySelector('div#area')
+            area.innerText = 'PODE CLICAR!...';
+            area.style.background = 'green'
+            area.style.color = 'white'
+        }  
+
+        function clicar() {
+            document.getElementById('area')
+            area.innerText = 'CLICOU...!'
+            area.style.background = 'red'
+            area.style.color = 'white'   
+        }
+
+        function sair(){
+            area.innerText = 'SAIU...';
+            area.style.background = 'blue'
+            area.style.color = 'white'
+        }       
+
+    </script>
+</body>
+</html>

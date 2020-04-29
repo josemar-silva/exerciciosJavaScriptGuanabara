@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!--
+    <div id="area" onclick="clicar()" onmouseout="sair()" onmouseover="entrar()">clique em mim</div> 
+    -->
+<div id="calc">
+    <input type="number" name="n1" id="n1"> <p>+</p>
+    <input type="number" name="n2" id="n2">
+    <p><input type="button" value="somar" onclick="somar()"></p>
+    <p><input type="button" value="subtrair" onclick="subtrair()"></p>
+    <p><input type="button" value="multiplicar" onclick="multiplicar()"></p>
+    <p><input type="button" value="dividir" onclick="dividir()"></p>
+    <p><input type="button" value="limpar" onclick="limpar()"></p>
+    <p name='res'id="res"> resultado</p>
+</div>
+        <script>
+
+function somar(){
+            var n1 = document.querySelector('input#n1')
+            var n2 = document.querySelector('input#n2')
+          
+            var m1 = Number.parseInt(n1.value)
+            var m2 = Number.parseInt(n2.value)
+            var s = m1+m2
+            res.innerHTML = `${s}`
+        }
+            function subtrair(){
+            var n1 = document.querySelector('input#n1')
+            var n2 = document.querySelector('input#n2')
+          
+            var m1 = Number.parseInt(n1.value)
+            var m2 = Number.parseInt(n2.value)
+            var s = m1-m2
+            res.innerHTML = `${s}`
+        }
+
+        function multiplicar(){
+            var n1 = document.querySelector('input#n1')
+            var n2 = document.querySelector('input#n2')
+          
+            var m1 = Number.parseInt(n1.value)
+            var m2 = Number.parseInt(n2.value)
+            var s = m1*m2
+            res.innerHTML = `${s}`
+        }
+
+        function dividir(){
+            var n1 = document.querySelector('input#n1')
+            var n2 = document.querySelector('input#n2')
+          
+            var m1 = Number.parseInt(n1.value)
+            var m2 = Number.parseInt(n2.value)
+            var s = m1/m2
+            res.innerHTML = `${s}`
+        }
+
+        function limpar(){
+            var n1 = document.querySelector('input#n1')
+            var n2 = document.querySelector('input#n2')
+          
+            var m1 = Number.parseInt(n1.value)
+            var m2 = Number.parseInt(n2.value)
+            var s = m1/m2
+            res.innerHTML = `${0}`
+        }
+
+        </script>
+</body>
+</html>
